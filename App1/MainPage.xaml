@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <MediaPlayerElement x:Name="remoteVideoPlayerElement" />
+        <MediaPlayerElement
+            x:Name="localVideoPlayerElement"
+            BorderBrush="Red"
+            BorderThickness="3"
+            Width="320" Height="240"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,20,20"/>
+        <Button Content="Connect" Margin="40" VerticalAlignment="Bottom" Height="120" Width="164" FontSize="32" Click="Button_Click"/>
+    </Grid>
+</Page>
